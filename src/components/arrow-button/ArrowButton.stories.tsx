@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+/*import type { Meta, StoryObj } from '@storybook/react';
 
 import { ArrowButton } from './ArrowButton';
 
@@ -18,3 +18,4 @@ export const ArrowButtonStory: Story = {
 		);
 	},
 };
+*/
