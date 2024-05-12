@@ -1,18 +1,18 @@
 import { useEffect } from 'react';
 
-type UseEscapeAndOutsideClickClose = {
+type UseClickOutsideAndEscClose = {
 	isOpen: boolean;
 	onChange: (newValue: boolean) => void;
 	onClose?: () => void;
 	rootRef: React.RefObject<HTMLElement>;
 };
 
-export const useEscapeAndOutsideClickClose = ({
+export const useClickOutsideAndEscClose = ({
 	isOpen,
 	rootRef,
 	onClose,
 	onChange,
-}: UseEscapeAndOutsideClickClose) => {
+}: UseClickOutsideAndEscClose) => {
 	useEffect(() => {
 		const handleClick = (event: MouseEvent) => {
 			const { target } = event;

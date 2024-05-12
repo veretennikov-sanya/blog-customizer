@@ -17,7 +17,7 @@ import {
 import { Select } from '../select';
 import { Separator } from '../separator';
 import { Text } from '../text';
-import { useEscapeAndOutsideClickClose } from './useEscapeAndOutsideClickClose';
+import { useClickOutsideAndEscClose } from './useClickOutsideAndEscClose';
 import styles from './ArticleParamsForm.module.scss';
 
 export const ArticleParamsForm: React.FC<ArticleParamsFormProps> = ({
@@ -26,7 +26,7 @@ export const ArticleParamsForm: React.FC<ArticleParamsFormProps> = ({
 	const [open, setOpen] = useState<boolean>(false);
 
 	const ref = useRef<HTMLElement>(null);
-	useEscapeAndOutsideClickClose({
+	useClickOutsideAndEscClose({
 		isOpen: open,
 		rootRef: ref,
 		onChange: setOpen,
