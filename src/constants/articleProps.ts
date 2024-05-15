@@ -1,3 +1,6 @@
+export interface ArticleParamsFormProps {
+	setStyle: React.Dispatch<React.SetStateAction<ArticleStateType>>;
+}
 export const fontFamilyClasses = [
 	'open-sans',
 	'ubuntu',
@@ -13,6 +16,7 @@ export type OptionType = {
 	value: string;
 	className: string;
 	optionClassName?: string;
+	name?: string;
 };
 
 export const fontFamilyOptions: OptionType[] & {
